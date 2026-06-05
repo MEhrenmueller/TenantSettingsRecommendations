@@ -1,0 +1,167 @@
+﻿Setting Name;Title;Enabled;Can Specify Security Groups;Tenant Setting Group;Enabled Security Groups;Excluded Security Groups;Delegate To Capacity;Delegate To Workspace;Delegate To Domain;Properties;Best Practice Recommendation Light;Best Practice Recommendation Light Default;Best Practice Recommendation Paranoid;Best Practice Recommendation Paranoid Default
+AllowServicePrincipalsUseReadAdminAPIs;Service principals can access read-only admin APIs;FALSE;TRUE;Admin API settings;null;null;FALSE;;FALSE;null;;;FALSE;
+AllowServicePrincipalsUseWriteAdminAPIs;Service principals can access admin APIs used for updates;FALSE;TRUE;Admin API settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+AdminApisIncludeDetailedMetadata;Enhance admin APIs responses with detailed metadata;TRUE;TRUE;Admin API settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AdminApisIncludeExpressions;Enhance admin APIs responses with DAX and mashup expressions;TRUE;TRUE;Admin API settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AllowAccessOverPrivateLinks;Tenant-level Private Link;FALSE;FALSE;Advanced networking;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+BlockAccessFromPublicNetworks;Block Public Internet Access;FALSE;FALSE;Advanced networking;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+WorkspaceBlockInboundAccess;Configure workspace-level inbound network rules;FALSE;FALSE;Advanced networking;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+WorkspaceBlockOutboundAccess;Configure workspace-level outbound network rules;FALSE;FALSE;Advanced networking;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+ConfigureWorkspaceLevelIPFirewallRules;Configure workspace-level IP firewall rules and trusted resource instances (preview);TRUE;FALSE;Advanced networking;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+UsageMetrics;Usage metrics for content creators;TRUE;TRUE;Audit and usage settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+UsageMetricsTrackUserLevelInfo;Per-user data in usage metrics for content creators;TRUE;TRUE;Audit and usage settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+AllowCapacityMetricsReportUserMask;Show user data in the Fabric Capacity Metrics app and reports;TRUE;FALSE;Audit and usage settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+LogAnalyticsAttachForWorkspaceAdmins;Azure Log Analytics connections for workspace administrators;FALSE;TRUE;Audit and usage settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+PlatformMonitoringTenantSetting;Workspace admins can turn on monitoring for their workspaces (preview);TRUE;TRUE;Audit and usage settings;null;null;TRUE;FALSE;FALSE;null;;;TRUE;
+ASCollectQueryTextTelemetryTenantSwitch;Microsoft can store query text to aid in support investigations;TRUE;FALSE;Audit and usage settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AutomatedInsightsTenant;Receive notifications for top insights (preview);TRUE;TRUE;Insights settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AutomatedInsightsEntryPoints;Show entry points for insights (preview);TRUE;TRUE;Insights settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AllowUserDataProcessedByAiServicesOutOfGeo;Allow data processing outside geographic region for Azure AI services;FALSE;TRUE;Azure AI Service;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+AzureMapsInFabric;Users can use Azure Maps services;TRUE;TRUE;Azure Maps services;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AzureMapsInFabricCrossRegionDataProcessing;Data sent to Azure Maps can be processed outside your capacity's geographic region, compliance boundary or national cloud instance;FALSE;TRUE;Azure Maps services;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+AzureMapsWeatherServices;Users can use Azure Maps Weather Services (Preview);TRUE;FALSE;Azure Maps services;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+EnableAOAI;Users can use Copilot and other features powered by Azure OpenAI;TRUE;TRUE;Copilot and Azure OpenAI Service;null;null;TRUE;FALSE;FALSE;null;;;FALSE;Change Default
+ImmersiveTenantAdminSwitch;Users can access a standalone, cross-item Power BI Copilot experience (preview);TRUE;TRUE;Copilot and Azure OpenAI Service;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AllowSendAOAIDataToOtherRegions;Data sent to Azure OpenAI can be processed outside your capacity's geographic region, compliance boundary, or national cloud instance;FALSE;TRUE;Copilot and Azure OpenAI Service;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+CopilotCapacitySetupPermissionSwitch;Capacities can be designated as Fabric Copilot capacities;TRUE;TRUE;Copilot and Azure OpenAI Service;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+AllowStoreAOAIDataInOtherRegions;Data sent to Azure OpenAI can be stored outside your capacity's geographic region, compliance boundary, or national cloud instance;FALSE;TRUE;Copilot and Azure OpenAI Service;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+PreppedForCopilotContentDiscovery;Only show approved items in the standalone Copilot in Power BI experience (preview);FALSE;FALSE;Copilot and Azure OpenAI Service;null;null;FALSE;TRUE;TRUE;null;;;TRUE;Change Default
+CDSAManagement;Create and use Gen1 dataflows;TRUE;FALSE;Gen1 dataflow settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+TemplatePublish;Create template organizational apps;FALSE;TRUE;App settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+AppPush;Push apps to end users;TRUE;TRUE;App settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+PublishContentPack;Publish apps to the entire organization;TRUE;TRUE;App settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+CustomVisualsTenant;Allow visuals created using the Power BI SDK;TRUE;TRUE;Power BI visuals;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+CertifiedCustomVisualsTenant;Add and use certified visuals only (block uncertified);FALSE;FALSE;Power BI visuals;null;null;FALSE;FALSE;FALSE;null;TRUE;Change Default;TRUE;Change Default
+AllowCVToExportDataToFileTenant;Allow downloads from custom visuals;FALSE;TRUE;Power BI visuals;null;null;FALSE;FALSE;FALSE;null;FALSE;;FALSE;
+AllowCVAuthenticationTenant;AppSource Custom Visuals SSO;FALSE;TRUE;Power BI visuals;null;null;FALSE;FALSE;FALSE;null;FALSE;;FALSE;
+AllowCVLocalStorageV2Tenant;Allow access to the browser's local storage;TRUE;TRUE;Power BI visuals;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+WebContentTilesTenant;Web content on dashboard tiles;FALSE;TRUE;Dashboard settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+EnableReassignDataDomainSwitch;Allow tenant and domain admins to override workspace assignments (preview);TRUE;FALSE;Domain management settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AdminDataExploreViewPermission;Users with view permission can launch Explore;TRUE;FALSE;Explore settings (preview);null;null;FALSE;FALSE;FALSE;null;;;;
+DatamartTenant;Create Datamarts (preview);TRUE;TRUE;Datamart settings;null;null;FALSE;FALSE;FALSE;null;FALSE;Change Default;FALSE;Change Default
+WebModelingTenantSwitch;Users can edit semantic models in the Power BI service;TRUE;TRUE;Semantic model settings;null;null;FALSE;FALSE;FALSE;null;;;;
+BlockAutoDiscoverAndPackageRefresh;Block republish and disable package refresh;FALSE;FALSE;Semantic Model Security;null;null;FALSE;FALSE;FALSE;null;;;;
+Embedding;Embed content in apps;TRUE;TRUE;Developer settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ServicePrincipalAccessGlobalAPIs;Service principals can create workspaces, connections, and deployment pipelines;TRUE;TRUE;Developer settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+ServicePrincipalAccessPermissionAPIs;Service principals can call Fabric public APIs;TRUE;TRUE;Developer settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+AllowServicePrincipalsCreateAndUseProfiles;Allow service principals to create and use profiles;FALSE;TRUE;Developer settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+BlockResourceKeyAuthentication;Block ResourceKey Authentication;FALSE;FALSE;Developer settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+ConfigureFabricIdentityTenantLimit;Define maximum number of Fabric identities in a tenant;FALSE;FALSE;Developer settings;null;null;FALSE;FALSE;FALSE;"[{""name"":""FabricIdentityTenantLimit"",""value"":"""",""type"":""Integer""}]";;;TRUE;Change Default
+DiscoverDatasetsSettingsPromoted;Make promoted content discoverable;TRUE;TRUE;Discovery settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+DiscoverDatasetsSettingsCertified;Make certified content discoverable;TRUE;TRUE;Discovery settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+DiscoverDatasetsConsumption;Discover content;TRUE;TRUE;Discovery settings;null;null;FALSE;FALSE;FALSE;null;TRUE;;TRUE;
+WorkspaceCmk;Apply customer-managed keys;FALSE;FALSE;Encryption;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+AllowExternalDataSharingSwitch;External data sharing;FALSE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;FALSE;;FALSE;
+AllowExternalDataSharingReceiverSwitch;Users can accept external data shares;FALSE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;FALSE;;FALSE;
+AllowGuestUserToAccessSharedContent;Guest users can access Microsoft Fabric;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ExternalSharingV2;Users can invite guest users to collaborate through item sharing and permissions;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ElevatedGuestsTenant;Guest users can browse and access Fabric content;FALSE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+AllowGuestLookup;Users can see guest users in lists of suggested people;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;TRUE;;TRUE;
+PublishToWeb;Publish to web;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;"[{""name"":""CreateP2w"",""value"":""true"",""type"":""Boolean""}]";FALSE;Change Default;FALSE;Change Default
+ExportVisualImageTenant;Copy and paste visuals;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ExportToExcelSetting;Export to Excel;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ExportToCsv;Export to .csv;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ExportReport;Download reports;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+LiveConnection;Users can work with semantic models in Excel using a live connection;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;;
+ExportToPowerPoint;Export reports as PowerPoint presentations or PDF documents;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ExportToMHTML;Export reports as MHTML documents;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ExportToWord;Export reports as Word documents;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ExportToXML;Export reports as XML documents;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ExportToImage;Export reports as image files;FALSE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+Printing;Print dashboards and reports;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+CertifyDatasets;Certification;FALSE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;"[{""name"":""CertificationDocumentationUrl"",""value"":"""",""type"":""Url""}]";;;;
+AllowEndorsementMasterDataSwitch;Endorse master data;FALSE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;;
+EmailSubscriptionTenant;Users can set up email subscriptions;TRUE;FALSE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+EmailSubscriptionsToB2BUsers;B2B guest users can set up and be subscribed to email subscriptions;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+EmailSubscriptionsToExternalUsers;Users can send email subscriptions to external users;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+PromoteContent;Featured content;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;;
+EnableExcelYellowIntegration;Allow connections to featured tables;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;;
+ShareLinkToEntireOrg;Allow shareable links to grant access to everyone in your organization;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ShareToTeamsTenant;Enable Microsoft Teams integration;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AutoInstallPowerBIAppInTeamsTenant;Install Power BI app for Microsoft Teams automatically;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;;
+StorytellingTenant;Enable Power BI add-in for PowerPoint;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AllowPowerBIASDQOnTenant;Allow DirectQuery connections to Power BI semantic models;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;;
+ExternalDatasetSharingTenant;Guest users can work with shared semantic models in their own tenants;FALSE;FALSE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+EnableDatasetInPlaceSharing;Allow specific users to turn on external data sharing;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AllowNotebookDataExport;Users with read or write permission can download data from notebooks;TRUE;TRUE;Export and sharing settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+GitIntegrationTenantSwitch;Users can synchronize workspace items with their Git repositories;TRUE;TRUE;Git integration;null;null;FALSE;FALSE;FALSE;null;TRUE;;TRUE;
+GitIntegrationCrossGeoTenantSwitch;Users can export items to Git repositories in other geographical locations;FALSE;TRUE;Git integration;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+GitIntegrationSensitivityLabelsTenantSwitch;Users can export workspace items with applied sensitivity labels to Git repositories;TRUE;TRUE;Git integration;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+GitHubTenantSettings;Users can sync workspace items with GitHub repositories;FALSE;TRUE;Git integration;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+PowerBIGoalsTenant;Create and use Scorecards;TRUE;TRUE;Scorecards settings;null;null;FALSE;FALSE;FALSE;null;;;;
+TenantSettingPublishGetHelpInfo;"Publish ""Get Help"" information";FALSE;TRUE;Help and support settings;null;null;FALSE;FALSE;FALSE;"[{""name"":""TrainingDocumentation"",""value"":"""",""type"":""Url""},{""name"":""DiscussionForum"",""value"":"""",""type"":""Url""},{""name"":""LicensingRequests"",""value"":"""",""type"":""Url""},{""name"":""HelpDesk"",""value"":"""",""type"":""Url""}]";;;;
+EmailSecurityGroupsOnOutage;Receive email and Teams notifications for service outages or incidents;FALSE;TRUE;Help and support settings;null;null;FALSE;FALSE;FALSE;"[{""name"":""EmailList"",""value"":""[]"",""type"":""MailEnabledSecurityGroup""}]";;;;
+InProductOutageNotification;Receive In-product notifications for service outages or incidents;FALSE;TRUE;Help and support settings;null;null;FALSE;FALSE;FALSE;null;;;;
+AllowFreeTrial;Users can try Microsoft Fabric paid features;TRUE;TRUE;Help and support settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AdminCustomDisclaimer;Show a custom message before publishing reports;FALSE;TRUE;Help and support settings;null;null;FALSE;FALSE;FALSE;"[{""name"":""AdminCustomDisclaimer"",""value"":"""",""type"":""Freetext""}]";;;TRUE;Change Default
+EimInformationProtectionEdit;Allow users to apply sensitivity labels for content;FALSE;TRUE;Information protection;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+EimInformationProtectionDataSourceInheritanceSetting;Apply sensitivity labels from data sources to their data in Power BI;FALSE;TRUE;Information protection;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+EimInformationProtectionDownstreamInheritanceSetting;Automatically apply sensitivity labels to downstream content;FALSE;TRUE;Information protection;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+EimInformationProtectionWorkspaceAdminsOverrideAutomaticLabelsSetting;Allow workspace admins to override automatically applied sensitivity labels;FALSE;FALSE;Information protection;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+BlockProtectedLabelSharingToEntireOrg;Restrict content with protected labels from being shared via link with everyone in your organization;FALSE;FALSE;Information protection;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+EimInformationProtectionDefaultLabelDomainSetting;Domain admins can set default sensitivity labels for their domains (preview);FALSE;FALSE;Information protection;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+DataSecurityForAIInteractions;Allow Microsoft Purview to secure AI interactions;TRUE;FALSE;Information protection;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+OnPremAnalyzeInExcel;Allow XMLA endpoints and Analyze in Excel with on-premises semantic models;TRUE;TRUE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;;
+DatasetExecuteQueries;Semantic Model Execute Queries REST API;TRUE;TRUE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;;
+PowerBIMCP;Users can use the Power BI Model Context Protocol server endpoint (preview);FALSE;TRUE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+EsriVisual;Use ArcGIS Maps for Power BI;TRUE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ArtifactSearchTenant;Use global search for Power BI;TRUE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AzureMaps;Users can use the Azure Maps visual;TRUE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AzureMapsCrossRegionDataProcessing;Data sent to Azure Maps can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance;FALSE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+AzureMapsThirdPartyDataProcessing;Data sent to Azure Maps can be processed by Microsoft Online Services Subprocessors;FALSE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+BingMap;Map and filled map visuals;TRUE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+VisualizeListInPowerBI;Integration with SharePoint and Microsoft Lists;TRUE;TRUE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;;
+DremioSSO;Dremio SSO;FALSE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+SnowflakeSSO;Snowflake SSO;FALSE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+RedshiftSSO;Redshift SSO;FALSE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+GoogleBigQuerySSO;Google BigQuery SSO;FALSE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+DenodoForPowerBISSO;Enable Denodo SSO;FALSE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+StarburstAadSSO;Enable Starburst SSO;FALSE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+AADSSOForGateway;Microsoft Entra single sign-on for data gateway;FALSE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+OneDriveSharePointViewerIntegrationTenantSettingV2;Users can view Power BI files saved in OneDrive and SharePoint (preview);TRUE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;;
+OneDriveSharePointAllowSharingTenantSetting;Users can share links to Power BI files stored in OneDrive and SharePoint through Power BI Desktop (preview);TRUE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;;
+ASShareableCloudConnectionBindingSecurityModeTenant;Enable granular access control for all data connections;FALSE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+ASWritethruContinuousExportTenantSwitch;Semantic models can export data to OneLake;TRUE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ODSPRefreshEnforcementTenantAllowAutomaticUpdate;Semantic model owners can choose to automatically update semantic models from files imported from OneDrive or SharePoint;TRUE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;;
+EnableEsriLibraries;ArcGIS GeoAnalytics for Fabric Runtime;FALSE;FALSE;Integration settings;null;null;TRUE;FALSE;FALSE;null;;;FALSE;
+AllowNonEntraADAuthInEventStream;Allow non-Entra ID auth in Eventstream;TRUE;FALSE;Integration settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+M365DataSharing;Share Fabric data with your Microsoft 365 services;TRUE;FALSE;Share data with your Microsoft 365 services;null;null;FALSE;FALSE;FALSE;"[{""name"":""M365DataSharingAcrossGeos"",""value"":""false"",""type"":""Boolean""}]";;;FALSE;Change Default
+FabricGAWorkloads;Users can create Fabric items;TRUE;TRUE;Microsoft Fabric;null;null;TRUE;FALSE;FALSE;null;;;;
+OntologyPreview;Users can create Ontology (preview) items;FALSE;TRUE;Microsoft Fabric;null;null;TRUE;FALSE;FALSE;null;;;FALSE;
+ArtifactGraphPreview;User can create Graph (preview);TRUE;TRUE;Microsoft Fabric;null;null;TRUE;FALSE;FALSE;null;;;;
+DigitalOperationsPreview;Users can create Digital Twin Builder (preview) items;FALSE;TRUE;Microsoft Fabric;null;null;TRUE;FALSE;FALSE;null;;;FALSE;
+ArtifactOrgAppPreview;Users can discover and create org apps (preview);FALSE;TRUE;Microsoft Fabric;null;null;FALSE;FALSE;FALSE;null;;;;
+FabricFeedbackTenantSwitch;Product Feedback;TRUE;FALSE;Microsoft Fabric;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+FabricPromotionTenantSwitch;Users can be informed of upcoming conferences featuring Microsoft Fabric when they are logged in to Fabric;TRUE;FALSE;Microsoft Fabric;null;null;FALSE;FALSE;FALSE;null;;;;
+MLModelEndpointsTenantSwitch;ML models can serve real-time predictions from API endpoints (preview);TRUE;TRUE;Microsoft Fabric;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+RTHAnomalyDetectionTenantSwitch;Detect anomalies in Real-Time Intelligence (Preview);FALSE;TRUE;Microsoft Fabric;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+EventDefinitionTenantSwitch;Enable Event Schema Sets in Real-Time Hub (preview);TRUE;TRUE;Microsoft Fabric;null;null;FALSE;FALSE;FALSE;null;;;;
+ArtifactDBTItemTenantSwitch;Users can create dbt job items (preview);TRUE;TRUE;Microsoft Fabric;null;null;FALSE;FALSE;FALSE;null;;;;
+RTHOperationalAgentsTenantSwitch;Enable Operations Agents (Preview);FALSE;TRUE;Microsoft Fabric;null;null;TRUE;FALSE;FALSE;null;;;FALSE;
+ShowActivatorEntryPointsTenantSwitch;"All Power BI users can see ""Set alert"" button to create Fabric Activator alerts";TRUE;TRUE;Microsoft Fabric;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+ArtifactMirroredCatalogPreview;Enable new mirrored catalog items (preview);FALSE;TRUE;Microsoft Fabric;null;null;TRUE;FALSE;FALSE;null;;;FALSE;
+ArtifactPlanningPreview;Users can create Plan (preview) items;FALSE;TRUE;Microsoft Fabric;null;null;TRUE;FALSE;FALSE;null;;;;
+AppBackendTenant;Enable Fabric App Items (preview);FALSE;TRUE;Microsoft Fabric;null;null;TRUE;FALSE;FALSE;null;;;;
+OneLakeForThirdParty;Users can access data stored in OneLake with apps external to Fabric;TRUE;FALSE;OneLake settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+AllowGetOneLakeUDK;Use short-lived user-delegated SAS tokens;TRUE;FALSE;OneLake settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;
+AllowOneLakeUDK;Authenticate with OneLake user-delegated SAS tokens;FALSE;FALSE;OneLake settings;null;null;FALSE;TRUE;FALSE;null;;;FALSE;
+OneLakeFileExplorer;Users can sync data in OneLake with the OneLake File Explorer app;TRUE;FALSE;OneLake settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+OneLakeDiagnosticLogsEUII;Include end-user identifiers in OneLake diagnostic logs;TRUE;FALSE;OneLake settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+QnaFeedbackLoop;Review questions;TRUE;TRUE;Q&A settings;null;null;FALSE;FALSE;FALSE;null;;;;
+QnaLsdlSharing;Synonym sharing;TRUE;FALSE;Q&A settings;null;null;FALSE;FALSE;FALSE;null;;;;
+RScriptVisual;Interact with and share R and Python visuals;TRUE;FALSE;R and Python visuals settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+QueryScaleOutTenant;Scale out queries for large semantic models;TRUE;FALSE;Scale-out settings;null;null;FALSE;FALSE;FALSE;null;;;;
+DevelopServiceApps;Publish template apps;TRUE;TRUE;Template app settings;null;null;FALSE;FALSE;FALSE;null;;;;
+InstallServiceApps;Install template apps;TRUE;TRUE;Template app settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+InstallNonvalidatedTemplateApps;Install template apps not listed in AppSource;FALSE;TRUE;Template app settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+ExpFlightingTenant;Help Power BI optimize your experience;TRUE;FALSE;User experience experiments;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+FabricAddWorkloadToWorkspace;Workspace admins can add and remove additional workloads (preview);TRUE;TRUE;Additional workloads;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+FabricAddPartnerWorkload;Capacity admins and contributors can add and remove additional workloads;TRUE;TRUE;Additional workloads;null;null;FALSE;FALSE;FALSE;"[{""name"":""OnlyCapacityAdmins"",""value"":""false"",""type"":""Boolean""}]";;;FALSE;Change Default
+FabricThirdPartyWorkloads;Workspace admins can develop partner workloads;FALSE;TRUE;Additional workloads;null;null;FALSE;FALSE;FALSE;null;;;FALSE;
+ThirdPartyPrivateWorkloads;Users can see and work with additional workloads not validated by Microsoft;FALSE;TRUE;Additional workloads;null;null;FALSE;FALSE;FALSE;null;FALSE;;FALSE;
+CreateAppWorkspaces;Create workspaces;TRUE;TRUE;Workspace settings;null;null;FALSE;FALSE;FALSE;null;;;FALSE;Change Default
+UseDatasetsAcrossWorkspaces;Use semantic models across workspaces;TRUE;TRUE;Workspace settings;null;null;FALSE;FALSE;FALSE;null;;;;
+RestrictMyFolderCapacity;Block users from reassigning personal workspaces (My Workspace);FALSE;FALSE;Workspace settings;null;null;FALSE;FALSE;FALSE;null;;;TRUE;Change Default
+ConfigureFolderRetentionPeriod;Define workspace retention period;TRUE;FALSE;Workspace settings;null;null;FALSE;FALSE;FALSE;"[{""name"":""FolderRetentionPeriod"",""value"":"""",""type"":""Integer""}]";;;TRUE;
+AutomaticallyUsePBIR;Automatically convert and store reports using Power BI enhanced metadata format (PBIR) (preview);TRUE;TRUE;Workspace settings;null;null;FALSE;FALSE;FALSE;null;;;;
+ConfigureArtifactRetentionPeriod;Fabric item recovery;FALSE;FALSE;Workspace settings;null;null;FALSE;FALSE;FALSE;"[{""name"":""ArtifactRetentionPeriod"",""value"":"""",""type"":""Integer""}]";;;;
